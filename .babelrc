@@ -1,6 +1,6 @@
 {
-    "presets": ["es2015"],
-    "ignore": [
-      "./src/js/directive/datePicker.js"
-    ]
-  }
+  "presets": [
+      "@babel/preset-env",
+     ["@babel/preset-react", {"runtime": "automatic"}]
+  ]
+}
