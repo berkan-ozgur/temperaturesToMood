@@ -1,0 +1,25 @@
+div {
+  white-space: pre-wrap;
+  text-shadow: 2px 2px 5px rgb(62, 62, 63);
+  font-family: "Hubbolli", cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(53, 51, 51);
+}
+
+#dataFromAPI {
+  color: white;
+  border: 2px solid rgb(118, 118, 119);
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+img {
+  opacity: 75%;
+  margin-left: 41%;
+}
