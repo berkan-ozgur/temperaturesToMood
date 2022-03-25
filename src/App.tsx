@@ -1,14 +1,20 @@
-import React from "react";
-import { render } from "react-dom";
-import WeatherParams from "./WeatherParams";
+import React from 'react';
+import './App.css';
+import FetchingData from './getData';
 
 
-const App = () => {
-    return (
-        <div>
-            <WeatherParams />
-        </div>
-    )
+// axios.interceptors.response.use(function (response){
+//   console.log(response)
+//   return response;
+// })
+
+
+function App() {
+  return (
+    <div>
+      <FetchingData />
+    </div>
+  )
 }
 
-render(<App />, document.getElementById("root"));
+export default App;
