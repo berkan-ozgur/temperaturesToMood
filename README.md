@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -71,5 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
 # temperaturesToMood
+
 This a website that moods are changing for temperatures
->>>>>>> a235878815869ddf3a4d8a67e27e20eef49e4025
