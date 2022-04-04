@@ -5,7 +5,6 @@ import DegreeServices from "./services/degreeServices";
 
 function FetchingData() {
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [dates, setDates] = useState<any>([]);
 
     let degreeServices = new DegreeServices();
@@ -14,8 +13,7 @@ function FetchingData() {
         degreeServices.getData().then(result => {
             setDates(result.data.hourly)
         })
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [degreeServices])
 
     function getWeather() {
         const d = new Date();
@@ -25,10 +23,8 @@ function FetchingData() {
         return (
             dates.time ? dates.time.map((_t: string | number, index: React.Key | null | undefined) => (
                 index === hours ? <p key={index} id="dataFromAPI">{"Hour: " + hours + ":"
-                    // eslint-disable-next-line no-useless-concat
-                    + minutes + " " + "\n" + "Temperature: " + dates.temperature_2m[hours]
-                    // eslint-disable-next-line no-useless-concat
-                    + "°C" + "\n " + "Mood: " + degreeServices.filter(dates.temperature_2m[hours])}</p> : null
+                    + minutes + "\nTemperature: " + dates.temperature_2m[hours]
+                    + "°C\nMood: " + degreeServices.filter(dates.temperature_2m[hours])}</p> : null
             ))
 
                 : null);
